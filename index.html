@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Geo Thompson · UGC Creator</title>
+<meta name="description" content="Geo Thompson is a 50-year-old UGC creator and Amazon Influencer making scroll-stopping videos for brands that sell to women over 40: skincare, perimenopause wellness, travel, fashion and tech.">
+<meta property="og:title" content="Geo Thompson · UGC Creator">
+<meta property="og:description" content="I'm 50, in perimenopause, and I'm your customer. UGC that sells to women over 40.">
+<meta property="og:image" content="https://geothompsonugc.github.io/img/geo-hero.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23D9346F'/%3E%3Ctext x='32' y='44' font-family='Georgia' font-size='36' text-anchor='middle' fill='white'%3EG%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FFF6F8; --paper:#FFFFFF; --ink:#2B1622; --muted:#735E69; --line:#F0DCE4;
+  --pink:#D9346F; --pink-soft:#FBE1EA; --sun:#E9772F; --sun-soft:#FDEBDD;
+  --display:"Bricolage Grotesque","Avenir Next",system-ui,sans-serif;
+  --body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --r:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img,video{max-width:100%;display:block}
+a{color:var(--pink)}
+.wrap{max-width:1160px;margin:0 auto;padding-inline:max(20px,env(safe-area-inset-left,0px))}
+h1,h2,h3{font-family:var(--display);line-height:1.05;margin:0;text-wrap:balance}
+h2{font-size:clamp(32px,5vw,52px);font-weight:800;letter-spacing:-.02em}
+h3{font-size:20px;font-weight:600}
+p{margin:0 0 14px;max-width:62ch}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--pink)}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:16px;text-decoration:none;padding:13px 22px;border-radius:999px;border:2px solid var(--ink);color:var(--ink);background:transparent;cursor:pointer;transition:transform .15s,background .15s,color .15s}
+.btn:hover,.btn:focus-visible{transform:translateY(-2px);outline:none}
+.btn.solid{background:var(--pink);border-color:var(--pink);color:#fff}
+.btn.solid:hover{background:var(--ink);border-color:var(--ink)}
+
+/* nav */
+header.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+.logo{font-family:var(--display);font-weight:800;font-size:22px;text-decoration:none;color:var(--ink);letter-spacing:-.01em}
+.logo span{color:var(--pink)}
+nav.links{display:flex;gap:26px;align-items:center}
+nav.links a{color:var(--ink);text-decoration:none;font-weight:500;font-size:15px}
+nav.links a:hover{color:var(--pink)}
+nav.links .btn{padding:9px 18px;font-size:14px}
+@media (max-width:760px){nav.links a:not(.btn){display:none}}
+
+/* hero */
+.hero{padding-block:56px 72px}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(44px,7.4vw,92px);font-weight:800;letter-spacing:-.035em;margin-block:14px 22px}
+.hero h1 em{font-style:normal;color:var(--pink);position:relative;white-space:nowrap}
+.hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:.06em;height:.16em;background:var(--sun);opacity:.35;z-index:-1;border-radius:4px}
+.hero .lede{font-size:20px;color:var(--muted);max-width:44ch}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.phone{position:relative;justify-self:center;width:min(340px,100%)}
+.phone video{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:32px;border:8px solid var(--ink);background:var(--ink);box-shadow:0 30px 60px -20px rgba(43,22,34,.45)}
+.phone .tag{position:absolute;left:-28px;bottom:40px;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:10px 14px;font-size:14px;font-weight:600;box-shadow:0 10px 30px -12px rgba(43,22,34,.3);transform:rotate(-4deg)}
+.phone .tag b{display:block;font-family:var(--display);font-size:22px;color:var(--pink)}
+.phone .sticker{position:absolute;right:-18px;top:30px;width:92px;height:92px;border-radius:50%;background:var(--sun);color:#fff;display:grid;place-items:center;text-align:center;font-family:var(--display);font-weight:800;font-size:14px;line-height:1.1;transform:rotate(10deg);box-shadow:0 10px 24px -10px rgba(233,119,47,.7)}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr;gap:40px}.phone .tag{left:-6px}.phone .sticker{right:-4px}}
+
+/* ticker */
+.ticker{background:var(--ink);color:#fff;overflow:hidden;white-space:nowrap;padding-block:16px}
+.ticker .track{display:inline-flex;gap:40px;animation:scroll 38s linear infinite;font-family:var(--display);font-size:20px;font-weight:600}
+.ticker span::after{content:"✦";color:var(--pink);margin-left:40px}
+@keyframes scroll{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.ticker .track{animation:none}html{scroll-behavior:auto}}
+
+section{padding-block:96px;scroll-margin-top:70px}
+.head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:40px}
+.head p{color:var(--muted);margin:0;max-width:46ch}
+
+/* work */
+.reels{display:grid;grid-template-columns:repeat(5,1fr);gap:22px}
+@media (max-width:1100px){.reels{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:700px){.reels{grid-template-columns:repeat(2,1fr);gap:16px}}
+.reel{min-width:0}
+.reel video{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:var(--r);background:var(--ink)}
+.reel .meta{padding-top:14px}
+.reel .brand{font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.reel h3{margin-block:4px 10px}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{font-size:12.5px;font-weight:600;padding:3px 10px;border-radius:999px;background:var(--pink-soft);color:var(--pink)}
+.chip.alt{background:var(--sun-soft);color:#A9501A}
+.chip.len{background:transparent;border:1px solid var(--line);color:var(--muted);font-variant-numeric:tabular-nums}
+
+/* photos */
+.photos{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.photos img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:var(--r);transition:transform .25s}
+.photos img:hover{transform:scale(1.02)}
+@media (max-width:700px){.photos{grid-template-columns:repeat(2,1fr);gap:10px}}
+
+/* about */
+.about{background:var(--paper);border-block:1px solid var(--line)}
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.mosaic{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.mosaic img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:var(--r)}
+.mosaic img:nth-child(2){margin-top:48px}.mosaic img:nth-child(3){margin-top:-48px}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:26px}
+.fact{border:1px solid var(--line);border-radius:14px;padding:14px 16px;background:var(--bg)}
+.fact b{display:block;font-family:var(--display);font-size:17px}
+.fact span{font-size:14px;color:var(--muted)}
+@media (max-width:860px){.about .wrap{grid-template-columns:1fr;gap:40px}}
+
+/* services */
+.formats{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:44px}
+.formats span{font-family:var(--display);font-weight:600;font-size:18px;padding:10px 18px;border-radius:999px;border:2px solid var(--ink)}
+.formats span:nth-child(3n+1){background:var(--pink-soft);border-color:var(--pink-soft)}
+.formats span:nth-child(3n+2){background:var(--sun-soft);border-color:var(--sun-soft)}
+.packages{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.pkg{border:1px solid var(--line);background:var(--paper);border-radius:22px;padding:28px;display:flex;flex-direction:column;gap:10px}
+.pkg.feature{background:var(--ink);color:#fff;border-color:var(--ink)}
+.pkg.feature li{color:#E8D6DE}
+.pkg h3{font-size:26px}
+.pkg .pitch{font-size:16px;margin:0}
+.pkg.feature .pitch{color:#F5E6EC}
+.pkg ul{margin:6px 0 0;padding-left:18px;color:var(--muted);font-size:15.5px}
+.pkg li{margin-bottom:6px}
+.pkg .badge{align-self:start;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:var(--pink);color:#fff;padding:4px 10px;border-radius:999px}
+.note{font-size:14px;color:var(--muted);margin-top:22px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-top:56px;counter-reset:s}
+.step{border-top:2px solid var(--ink);padding-top:14px}
+.step::before{counter-increment:s;content:"Step " counter(s);font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--pink)}
+.step h3{margin-block:6px}
+.step p{font-size:15px;color:var(--muted)}
+
+/* contact */
+.contact{background:var(--pink);color:#fff;border-radius:32px;padding:clamp(32px,6vw,72px);display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.contact h2{color:#fff}
+.contact p{color:#FFE3EC;font-size:19px}
+.contact .email{font-family:var(--display);font-size:clamp(20px,3vw,30px);font-weight:600;color:#fff;word-break:break-all;user-select:all}
+.contact .row{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+.contact .btn{border-color:#fff;color:#fff}
+.contact .btn.solid{background:#fff;color:var(--pink)}
+.contact img{border-radius:24px;aspect-ratio:4/5;object-fit:cover;width:100%;transform:rotate(3deg);border:6px solid #fff}
+@media (max-width:860px){.contact{grid-template-columns:1fr}.contact img{max-width:320px}}
+footer{padding-block:40px 56px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top">Geo Thompson</a>
+    <nav class="links" aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a class="btn solid" href="#contact">Work with me</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">UGC creator · Amazon Influencer</div>
+      <h1>I'm 50, in perimenopause, and I'm <em>your customer.</em></h1>
+      <p class="lede">I make scroll-stopping UGC for brands that sell to women over 40. Skincare for mature, melanin-rich skin, midlife wellness, travel, fashion and tech, from someone who actually lives it.</p>
+      <div class="ctas">
+        <a class="btn solid" href="#work">See my work</a>
+        <a class="btn" href="#services">What I make</a>
+      </div>
+    </div>
+    <div class="phone">
+      <video src="media/intro.mp4" poster="media/intro.jpg" controls playsinline preload="none" aria-label="Geo introduces herself"></video>
+      <div class="sticker">Gen X<br>&amp; proud</div>
+      <div class="tag"><b>Hi, I'm Geo!</b>Tap to meet me</div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true"><div class="track">
+  <span>Skincare for mature skin</span><span>Melanin-rich beauty</span><span>Perimenopause &amp; midlife</span><span>K-beauty</span><span>Travel</span><span>Fitness</span><span>Fashion over 40</span><span>Beauty tech</span>
+  <span>Skincare for mature skin</span><span>Melanin-rich beauty</span><span>Perimenopause &amp; midlife</span><span>K-beauty</span><span>Travel</span><span>Fitness</span><span>Fashion over 40</span><span>Beauty tech</span>
+</div></div>
+
+<section id="work">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="eyebrow">Video work</div><h2>UGC samples</h2></div>
+      <p>Vertical 9:16, ready for TikTok, Reels and paid social. Each one is labeled with its format so you can find what you need fast.</p>
+    </div>
+    <div class="reels">
+      <article class="reel">
+        <video src="media/boj-sunscreen.mp4" poster="media/boj-sunscreen.jpg" controls playsinline preload="none"></video>
+        <div class="meta"><div class="brand">Beauty of Joseon</div><h3>Relief Sun sunscreen</h3>
+        <div class="chips"><span class="chip">Hook-led demo</span><span class="chip alt">No white cast</span><span class="chip len">0:29</span></div></div>
+      </article>
+      <article class="reel">
+        <video src="media/loreal.mp4" poster="media/loreal.jpg" controls playsinline preload="none"></video>
+        <div class="meta"><div class="brand">L'Oréal Paris</div><h3>EverPure haircare</h3>
+        <div class="chips"><span class="chip">Shop with me</span><span class="chip alt">Natural hair demo</span><span class="chip len">0:42</span></div></div>
+      </article>
+      <article class="reel">
+        <video src="media/dove.mp4" poster="media/dove.jpg" controls playsinline preload="none"></video>
+        <div class="meta"><div class="brand">Dove</div><h3>Body wash</h3>
+        <div class="chips"><span class="chip">In-shower demo</span><span class="chip alt">Testimonial</span><span class="chip len">0:23</span></div></div>
+      </article>
+      <article class="reel">
+        <video src="media/purito-howto.mp4" poster="media/purito-howto.jpg" controls playsinline preload="none"></video>
+        <div class="meta"><div class="brand">Purito Seoul</div><h3>Bamboo Panthenol routine</h3>
+        <div class="chips"><span class="chip">Routine</span><span class="chip alt">Review</span><span class="chip len">1:07</span></div></div>
+      </article>
+      <article class="reel">
+        <video src="media/purito-routine.mp4" poster="media/purito-routine.jpg" controls playsinline preload="none"></video>
+        <div class="meta"><div class="brand">Purito Seoul</div><h3>Skincare application</h3>
+        <div class="chips"><span class="chip">How-to</span><span class="chip alt">Texture shots</span><span class="chip len">2:53</span></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="photos" style="padding-top:0">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="eyebrow">Product photography</div><h2>Stills that sell</h2></div>
+      <p>Clean product shots for listings, carousels and text-overlay ads.</p>
+    </div>
+    <div class="photos">
+      <img class="a" src="img/boj-set.jpg" alt="Beauty of Joseon serums, cream and cleansing bar arranged together" loading="lazy">
+      <img class="b" src="img/boj-serum.jpg" alt="Beauty of Joseon Glow Deep Serum beside its box" loading="lazy">
+      <img class="c" src="img/boj-kit.jpg" alt="Beauty of Joseon serum discovery kit, open" loading="lazy">
+      <img class="d" src="img/boj-balm.jpg" alt="Beauty of Joseon Radiance Cleansing Balm on its box" loading="lazy">
+      <img class="e" src="img/supergoop.jpg" alt="Supergoop Unseen Sunscreen SPF 40 standing on a table" loading="lazy">
+      <img class="f" src="img/medicube.jpg" alt="Hand holding Medicube One Day Exosome Shot box" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="wrap">
+    <div class="mosaic">
+      <img src="img/geo-hat.jpg" alt="Geo in a straw hat and orange sunglasses" loading="lazy">
+      <img src="img/geo-floral.jpg" alt="Geo smiling in a black and white floral top" loading="lazy">
+      <img src="img/geo-pool.jpg" alt="Geo smiling outdoors in a teal top" loading="lazy">
+      <img src="img/geo-orange.jpg" alt="Geo wearing an orange bob wig and sunglasses" loading="lazy">
+    </div>
+    <div>
+      <div class="eyebrow">About me</div>
+      <h2>Real life after 40, on camera.</h2>
+      <p style="margin-top:20px">Hi, I'm Geo. I'm a Black woman in my 50s, in the middle of perimenopause, and I don't sit still. I travel, I work out, and I test everything: skincare, beauty tech, travel gear and clothes that actually work after 40.</p>
+      <p>Most UGC creators are in their twenties. Your customer isn't. When I talk about hot flashes, dark spots, curls or sunscreen on deep skin, I'm speaking from my own life, so women over 40 stop scrolling and listen.</p>
+      <div class="facts">
+        <div class="fact"><b>Amazon Influencer</b><span>Program member with my own storefront</span></div>
+        <div class="fact"><b>Women 40+</b><span>The audience I speak to and belong to</span></div>
+        <div class="fact"><b>Melanin-rich skin</b><span>Real results on deep skin tones</span></div>
+        <div class="fact"><b>5–7 day turnaround</b><span>Raw files and alternate hooks available</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="eyebrow">Services</div><h2>What I make</h2></div>
+      <p>Only about 1 ad in 13 becomes a winner, so I build for testing: every video comes with alternate hooks to give you more chances at one.</p>
+    </div>
+    <div class="formats">
+      <span>Unboxing</span><span>Product demo</span><span>Testimonial</span><span>Before &amp; after</span><span>How-to</span><span>GRWM</span><span>POV</span><span>Reaction &amp; stitch</span><span>Voiceover</span><span>Product photos</span><span>Text-overlay statics</span>
+    </div>
+    <div class="packages">
+      <div class="pkg">
+        <h3>Single video</h3>
+        <p class="pitch">One strong video to test a new angle or launch a product.</p>
+        <ul><li>One 15–60s vertical video</li><li>Organic use rights</li><li>One round of revisions</li></ul>
+      </div>
+      <div class="pkg feature">
+        <span class="badge">Best for ads</span>
+        <h3>Testing pack</h3>
+        <p class="pitch">More chances at a winning ad from a single shoot.</p>
+        <ul><li>1 video with 5 different hooks</li><li>2 text-overlay statics</li><li>Built for paid social testing</li></ul>
+      </div>
+      <div class="pkg">
+        <h3>Monthly creative</h3>
+        <p class="pitch">A steady stream of fresh content for brands that test every week.</p>
+        <ul><li>8 videos, 2 hooks each</li><li>Fresh angles every month</li><li>Priority turnaround</li></ul>
+      </div>
+    </div>
+    <p class="note">Also available: paid ad usage rights, raw footage, product photos and rush delivery. Every project is quoted to fit your goals. <a href="#contact">Email me for rates.</a></p>
+    <div class="steps">
+      <div class="step"><h3>Send the brief</h3><p>Tell me the product, the goal and the customer. I'll send back hook and concept ideas.</p></div>
+      <div class="step"><h3>Ship the product</h3><p>I test it for real, so my reaction on camera is honest.</p></div>
+      <div class="step"><h3>Get your content</h3><p>Edited videos plus alternate hooks, delivered in 5–7 days.</p></div>
+      <div class="step"><h3>Test and scale</h3><p>Run what works. I'm happy to make more angles on your winners.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="padding-top:0">
+  <div class="wrap">
+    <div class="contact">
+      <div>
+        <h2>Let's make something your customer believes.</h2>
+        <p style="margin-top:18px">Tell me about your product and I'll reply within 24 hours with ideas.</p>
+        <div class="email" id="email">geothompsonugc@gmail.com</div>
+        <div class="row">
+          <button class="btn solid" type="button" id="copy">Copy email</button>
+          <a class="btn" href="https://www.tiktok.com/@wordofgeo" target="_blank" rel="noopener">TikTok</a>
+        </div>
+      </div>
+      <img src="img/geo-beach.jpg" alt="Geo smiling on the beach in a pink top" loading="lazy" style="object-position:70% center">
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>© 2026 Geo Thompson · UGC Creator</span><a href="#top">Back to top ↑</a></div></footer>
+
+<script>
+document.getElementById('copy').addEventListener('click',e=>{
+  const t=document.getElementById('email').textContent.trim();
+  navigator.clipboard.writeText(t).then(()=>{e.target.textContent='Copied!';setTimeout(()=>e.target.textContent='Copy email',1600)}).catch(()=>{const r=document.createRange();r.selectNodeContents(document.getElementById('email'));getSelection().removeAllRanges();getSelection().addRange(r)});
+});
+document.querySelectorAll('video').forEach(v=>v.addEventListener('play',()=>document.querySelectorAll('video').forEach(o=>{if(o!==v)o.pause()})));
+</script>
+</body>
+</html>
